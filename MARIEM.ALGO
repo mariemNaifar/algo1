@@ -1,0 +1,25 @@
+ALGORITHM algorithm_name
+VAR
+    i,leng,nc,nv,nw:INTEGER; 
+    s:STRING;
+    c:CHAR;
+    set_declarations
+BEGIN
+    Write("write your sentence");
+    Read(s);
+    len:=length(s);
+
+FOR i FROM 0  TO leng-1  STEP step  DO
+IF(s[i]=' ')THEN
+            nw:=nw+1;
+        END_IF
+        IF (S[i]=('a'or'e'or'i'or'o'or'u'or'y') DO
+            nv:=nv+1;
+        END_IF
+    END_FOR
+    nc:=leng-nw;
+    Write("Char number is",nc);
+    Write("words number is",nw+1);
+    Write("vowls number is",nv);
+
+END
